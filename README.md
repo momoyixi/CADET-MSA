@@ -59,6 +59,23 @@ please make sure the corresponding configuration is set as:
 
 Please note that raw videos and meta information are not included due to the privacy and licensing restrictions of YouTube content creators. For more details about CMU-MOSI and CMU-MOSEI, please refer to the official CMU MultimodalSDK.
 
+## Pretrained Checkpoints
+
+The pretrained checkpoints are not included in this repository due to file size limitations.
+
+You can download the pretrained checkpoints from [Google Drive](https://drive.google.com/drive/folders/1S5QjWZGcgAiZK2mYRM7DXuVTFypK3Yd1).
+
+After downloading, please place the checkpoint files into the `./pt` directory.
+
+For example:
+
+```text
+./pt/CADET_mosi.pth
+./pt/CADET_mosei.pth
+```
+
+The checkpoints are optional. Users can also train CADET from scratch by running `python train.py`.
+
 ## Run the Codes
 
 ### Training
@@ -83,8 +100,6 @@ If pretrained checkpoints are provided, please put them into the corresponding c
 
 ## Notes
 
-- The `dataset/` directory is not included in this repository.
-- The `log/` directory is not included in this repository.
 - Please check and revise the dataset paths in `./config/config.json` before running the code.
 - Citation information will be updated after publication.
 
